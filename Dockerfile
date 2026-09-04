@@ -1,4 +1,4 @@
-FROM vinta/python:2.7
+FROM python:3.12-slim
 
 MAINTAINER Vinta Chen <vinta.chen@gmail.com>
 
@@ -15,4 +15,4 @@ WORKDIR /app/
 COPY requirements*.txt /app/
 RUN pip install -r requirements_test.txt
 
-CMD ["coverage", "run", "setup.py", "test"]
+CMD ["coverage", "run", "-m", "pytest"]
