@@ -41,7 +41,6 @@ setup(
     install_requires=install_requires,
     include_package_data=True,
     packages=find_packages(exclude=['test_project.*', 'test_project']),
-    test_suite='run_tests.main',
     zip_safe=False,
     classifiers=[
         'Development Status :: 4 - Beta',
